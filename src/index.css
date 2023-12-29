@@ -1,0 +1,55 @@
+/* Import Google Fonts and Tailwind CSS */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body styles */
+body {
+    @apply text-gray-800;
+}
+
+/* Container styles */
+.custom-container {
+    @apply px-6 py-3 md:px-16 md:py-4 lg:px-32;
+}
+
+/* Button Styles */
+.button {
+    @apply px-4 py-3 w-fit rounded-md text-xs font-manrope font-medium tracking-wider;
+}
+
+.button__with__icon {
+    @apply flex items-center gap-2;
+}
+
+.button--primary {
+    @apply bg-pink-300 text-white hover:bg-pink-400;
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+    .custom-container {
+        @apply px-8 py-4 md:px-20 md:py-6 lg:px-32;
+    }
+
+    .button {
+        @apply px-5 py-3 text-sm;
+    }
+
+    .button--primary {
+        @apply px-5 py-3 text-sm;
+    }
+}
+
+@media (min-width: 768px) {
+    .button {
+        @apply px-6 py-3 text-sm;
+    }
+
+    .button--primary {
+        @apply px-6 py-3 text-sm;
+    }
+}
+
+/* Add more responsive styles as needed */

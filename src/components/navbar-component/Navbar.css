@@ -1,0 +1,31 @@
+.navbar {
+    @apply bg-gradient-to-b from-pink-300 to-white;
+}
+
+.navbar .navbar__box {
+    @apply flex flex-wrap items-center justify-between;
+}
+
+.navbar .navbar__box .navbar__img {
+    @apply w-8 md:w-10;
+}
+
+.navbar .navbar__box .navbar__name {
+    @apply font-playfair font-semibold md:text-xl;
+}
+
+.navbar .navbar__box .navbar__button {
+    @apply block lg:hidden;
+}
+
+.navbar .navbar__box .navbar_button .navbar__icon {
+    @apply md:text-lg;
+}
+
+.navbar .navbar__box .navbar__menus {
+    @apply w-full flex-col items-center gap-4 my-4 lg:flex lg:my-0 lg:flex-row lg:w-fit lg:gap-12;
+}
+
+.navbar .navbar__box .navbar__menus .navbar__item .navbar__link {
+    @apply font-manrope text-sm;
+}
