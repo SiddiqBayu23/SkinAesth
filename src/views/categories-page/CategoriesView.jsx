@@ -77,12 +77,12 @@ const CategoriesView = ({ products, handleNavigateDetail, showFilters, toggleFil
             </ul>
           )}
         </div>
-        {/* <div className="flex flex-col gap-4 w-full lg:w-52 px-4 py-4 border border-gray-400 rounded-md">
+        <div className="flex flex-col gap-4 w-full lg:w-52 px-4 py-4 border border-gray-400 rounded-md">
           <button className="font-medium font-manrope items-center flex justify-between text-sm">
             Featured
             <FaCaretDown />
           </button>
-        </div> */}
+        </div>
         <div className="flex flex-col gap-4 w-full lg:w-52 px-4 py-4 border border-gray-400 rounded-md">
           <button onClick={() => toggleFilter('price')} className="font-medium font-manrope items-center flex justify-between text-sm">
             Price
