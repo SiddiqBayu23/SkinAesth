@@ -111,7 +111,7 @@ const CategoriesView = ({ products, handleNavigateDetail, showFilters, toggleFil
           <div className='flex flex-col gap-2'>
             <p className='text-lg font-semibold font-manrope text-pink-300'>{product.product_name}</p>
             <p className='font-manrope text-gray-400'>{product.product_subname}</p>
-            <p className='font-semibold font-manrope text-gray-400'>${product.product_price}</p>
+            <p className='font-semibold font-manrope text-gray-400'>Rp{product.product_price}</p>
           </div>
         </div>
       ))}

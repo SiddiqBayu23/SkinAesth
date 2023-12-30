@@ -16,7 +16,7 @@ const DetailProductView = ({ product, tab, handleSetTab, recommended, like, hand
                 <h1 className='text-pink-300 font-bold font-manrope text-2xl'>{product.product_name}</h1>
                 <p className='font-manrope font-medium'>{product.product_subname}</p>
                 <p className='font-manrope font-medium text-sm text-gray-400'>{product.product_types}</p>
-                <p className='font-manrope font-semibold text-lg'>${product.product_price}</p>
+                <p className='font-manrope font-semibold text-lg'>Rp{product.product_price}</p>
                 <a href={product.product_url} className='button button__with__icon button--primary my-8' target='_blank'>
                     <IoLocationOutline className='text-lg' />
                     Check In Branches Stock
@@ -47,7 +47,7 @@ const DetailProductView = ({ product, tab, handleSetTab, recommended, like, hand
                 <hr className='my-8' />
                 <div className='flex flex-col gap-4' id='ingredients'>
                     <p className='text-pink-400 font-manrope font-semibold'>Ingredient</p>
-                    <p className='text-sm font-manrope'>{product.product_ingredients}</p>
+                    <p className='text-sm font-manrope'>Rp{product.product_ingredients}</p>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@ const DetailProductView = ({ product, tab, handleSetTab, recommended, like, hand
                 <div className="flex flex-col gap-2 mt-4">
                     <p className="text-base sm:text-lg font-semibold font-manrope text-pink-300">{product.product_name}</p>
                     <p className="font-manrope text-gray-400 text-sm sm:text-base">{product.product_subname}</p>
-                    <p className="font-semibold font-manrope text-gray-400 text-sm sm:text-base">${product.product_price}</p>
+                    <p className="font-semibold font-manrope text-gray-400 text-sm sm:text-base">Rp{product.product_price}</p>
                 </div>
             </div>
         ))}
@@ -80,7 +80,7 @@ const DetailProductView = ({ product, tab, handleSetTab, recommended, like, hand
                 <div className="flex flex-col gap-2 mt-4">
                     <p className="text-base sm:text-lg font-semibold font-manrope text-pink-300">{product.product_name}</p>
                     <p className="font-manrope text-gray-400 text-sm sm:text-base">{product.product_subname}</p>
-                    <p className="font-semibold font-manrope text-gray-400 text-sm sm:text-base">${product.product_price}</p>
+                    <p className="font-semibold font-manrope text-gray-400 text-sm sm:text-base">Rp{product.product_price}</p>
                 </div>
             </div>
         ))}
