@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import HomeHeader from '/assets/images/home-header.png';
 import HomeAbout from '/assets/images/home-about.png';
 import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
@@ -29,28 +30,30 @@ const HomeView = ({ categories, best, handleNavigateDetail, blogs, handleNavigat
               <p className="home__about__description font-playfair text-md lg:text-lg my-4 lg:my-8">
                 SkinAesth adalah situs yang menyediakan informasi seputar perawatan kulit dan produk skincare yang sesuai dengan jenis kulit Anda. Kami menyediakan artikel-artikel yang informatif dan terpercaya tentang cara merawat kulit Anda dengan benar, serta memberikan rekomendasi produk skincare yang tepat untuk jenis kulit Anda.
               </p>
-              <button className="button button--primary">Baca Selengkapnya</button>
+              <Link to="./about">
+              <button className="button button--primary">About</button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Categories Section */}
-      <section className="home__categories my-8 lg:my-32">
-        <div className="custom-container">
-          <div className="home__categories__box">
-            <h1 className="text__heading font-playfair text-center text-pink-300 text-4xl font-semibold mb-4 lg:mb-8">Categories</h1>
-            <div className="home__categories__list grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-8 my-8 lg:my-20">
-              {categories.map((category) => (
-                <div className="home__categories__item p-4 lg:p-8 rounded-md border border-pink-300 flex flex-col items-center gap-4" key={category.product_category_id}>
-                  <img src={category.imageUrl} alt="Toner Image" className="w-16 lg:w-20" />
-                  <p className="font-playfair font-medium text-sm lg:text-md text-center">{category.product_category_name}</p>
-                </div>
-              ))}
-            </div>
+<section className="home__categories my-8 lg:my-32">
+  <div className="custom-container">
+    <div className="home__categories__box">
+      <h1 className="text__heading font-playfair text-center text-pink-300 text-4xl font-semibold mb-4 lg:mb-8">Categories</h1>
+      <div className="home__categories__list grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-8 my-8 lg:my-20">
+        {categories.map((category) => (
+          <div className="home__categories__item p-4 lg:p-8 rounded-md border border-pink-300 flex flex-col items-center gap-4" key={category.product_category_id}>
+            <img src={category.imageUrl} alt="Toner Image" className="w-16 lg:w-20" />
+            <p className="font-playfair font-medium text-sm lg:text-md text-center">{category.product_category_name}</p>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Best Sellers Section */}
       <section className="home__best my-8 lg:my-32">

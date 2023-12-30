@@ -1,8 +1,9 @@
 import FooterIcon from '/assets/icons/beauty.svg';
+import { Link } from 'react-router-dom';
 import { FaDiscord, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const FooterComponent = () => (
-    <section className="bg-[#FBE5E3] py-12">
+    <section className="bg-[#FBE5E3] py-0">
   <div className="custom-container">
     <div className="footer__header flex flex-col lg:flex-row items-center justify-between mb-8 lg:mb-12">
       <div className="footer__brand flex items-center lg:mb-0">
@@ -22,15 +23,15 @@ const FooterComponent = () => (
     <div className="footer__content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {/* Content Item 1 */}
       <div className="footer__content__item mb-8 sm:mb-0">
-        <h1 className="footer__title text-xl font-manrope font-semibold mb-4">How Can We Help?</h1>
-        <div className="footer__content__item__list flex flex-col gap-2">
-          <p className="footer__content__text font-manrope">Home</p>
-          <p className="footer__content__text font-manrope">About Us</p>
-          <p className="footer__content__text font-manrope">Category</p>
-          <p className="footer__content__text font-manrope">Blog</p>
-          <p className="footer__content__text font-manrope">Subscribe</p>
-        </div>
-      </div>
+    <h1 className="footer__title text-xl font-manrope font-semibold mb-4">How Can We Help?</h1>
+    <div className="footer__content__item__list flex flex-col gap-2">
+      <Link to="./home" className="footer__content__text font-manrope">Home</Link>
+      <Link to="./about" className="footer__content__text font-manrope">About Us</Link>
+      <Link to="./categories" className="footer__content__text font-manrope">Category</Link>
+      <Link to="./blog" className="footer__content__text font-manrope">Blog</Link>
+      <Link to="./subscribe" className="footer__content__text font-manrope">Subscribe</Link>
+    </div>
+  </div>
 
       {/* Content Item 2 */}
       <div className="footer__content__item mb-8 sm:mb-0">
