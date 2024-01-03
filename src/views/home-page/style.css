@@ -1,0 +1,17 @@
+.home_header_image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .fadeInOut {
+    animation: fadeInOut 5s infinite alternate; /* Sesuaikan durasi sesuai kebutuhan */
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

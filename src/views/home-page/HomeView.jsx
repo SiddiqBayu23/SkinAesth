@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import HomeHeader from '/assets/images/home-header.png';
 import HomeAbout from '/assets/images/home-about.png';
+import './style.css'; // Corrected import statement
 import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { truncateText } from '../../helper/truncateText';
 import Carousel from 'react-bootstrap/Carousel';
 
 const HomeView = ({ categories, best, handleNavigateDetail, blogs, handleNavigateBlog }) => (
   <div className="home">
+    <header className="home__header">
+      <img src={HomeHeader} alt="Home Header Image" className='home_header_image' />
+    </header>
     
     
     <main>
@@ -69,7 +73,7 @@ const HomeView = ({ categories, best, handleNavigateDetail, blogs, handleNavigat
                   <div className="home__best__info flex flex-col gap-2">
                     <h2 className="home__best__name font-manrope font-semibold text-md lg:text-lg text-pink-400">{product.product_name}</h2>
                     <p className="home__best__desc font-manrope text-xs lg:text-sm">{product.product_subname}</p>
-                    <p className="home__best__price text-sm lg:text-md">${product.product_price}</p>
+                    <p className="home__best__price text-sm lg:text-md">Rp{product.product_price}</p>
                   </div>
                 </div>
               ))}

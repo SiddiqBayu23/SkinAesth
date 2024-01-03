@@ -25,7 +25,7 @@ const FooterComponent = () => (
       <div className="footer__content__item mb-8 sm:mb-0">
     <h1 className="footer__title text-xl font-manrope font-semibold mb-4">How Can We Help?</h1>
     <div className="footer__content__item__list flex flex-col gap-2">
-      <Link to="./home" className="footer__content__text font-manrope">Home</Link>
+      <Link to="http://localhost:5173/" className="footer__content__text font-manrope">Home</Link>
       <Link to="./about" className="footer__content__text font-manrope">About Us</Link>
       <Link to="./categories" className="footer__content__text font-manrope">Category</Link>
       <Link to="./blog" className="footer__content__text font-manrope">Blog</Link>
